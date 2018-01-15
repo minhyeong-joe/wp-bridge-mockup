@@ -12,52 +12,67 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </button>
-      <a class="navbar-brand" href="#"><img src="../img/bridge93-logo.png" alt=""><img src="../img/bridge93-logo-dark.png" alt=""></a>
 
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Pages
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/opening-hours">Opening Hours</a>
-              <a class="dropdown-item" href="/our-philosophy">Our Philosophy</a>
-              <a class="dropdown-item" href="/our-history">Our History</a>
-              <a class="dropdown-item" href="/team">Team</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/our-complete-menu">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/reservation">Reservation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact-us">Contact Us</a>
-          </li>
-        </ul>
-      </div>
 
-      <div class="navbar-right">
-        <a href="https://twitter.com" target="_blank" class="social-link twitter-link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="https://instagram.com" target="_blank" class="social-link instagram-link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href="https://tripadvisor.com" target="_blank" class="social-link tripadvisor-link"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
-        <a href="https://foursquare.com" target="_blank" class="social-link foursquare-link"><i class="fa fa-foursquare" aria-hidden="true"></i></a>
-        <button type="button" class="btn btn-dark">Make a reservation</button>
-      </div>
+    <div class="home-banner">
 
-    </nav>
+      <header>
 
-    <div class="banner home-banner"></div>
+        <nav class="navbar wide-navbar">
+          <div class="navbar-left">
+            <div class="logo"><img src="../img/bridge93-logo.png" alt=""></div>
+            <ul class="nav-list">
+              <li class="nav-item"><a href="/" class="nav-link"><span>Home</span></a></li>
+              <li class="nav-item dropdown-toggler"><a href="#" class="nav-link active"><span>Pages</span></a>
+                <ul class="dropdown-list">
+                  <li class="dropdown-item"><a href="/opening-hours" class="dropdown-link">Opening Hours</a></li>
+                  <li class="dropdown-item"><a href="/our-history" class="dropdown-link">Our History</a></li>
+                  <li class="dropdown-item"><a href="/our-philosophy" class="dropdown-link">Our Philosophy</a></li>
+                  <li class="dropdown-item"><a href="/team" class="dropdown-link">Team</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="/our-complete-menu" class="nav-link"><span>Menu</span></a></li>
+              <li class="nav-item"><a href="/reservation" class="nav-link"><span>Reservation</span></a></li>
+              <li class="nav-item"><a href="/contact-us" class="nav-link"><span>Contact Us</span></a></li>
+            </ul>
+          </div>
+          <div class="navbar-right">
+            <a href="https://twitter.com" target="_blank" class="social-link twitter-link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-link instagram-link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://tripadvisor.com" target="_blank" class="social-link tripadvisor-link"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+            <a href="https://foursquare.com" target="_blank" class="social-link foursquare-link"><i class="fa fa-foursquare" aria-hidden="true"></i></a>
+            <button type="button" class="btn btn-dark">Make a reservation</button>
+          </div>
+        </nav>
+
+        <nav class="navbar mobile-navbar">
+          <div class="navbar-left">
+            <button class="navbar-toggler" type="button" data-toggle="collapse">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+          <div class="navbar-center">
+            <img src="../img/bridge93-logo-dark.png" alt="">
+          </div>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/" class="nav-link"><span>Home</span></a></li>
+            <li class="nav-item dropdown-toggler"><a href="#" class="nav-link active"><span>Pages</span></a>
+              <ul class="dropdown-list">
+                <li class="dropdown-item"><a href="/opening-hours" class="dropdown-link">Opening Hours</a></li>
+                <li class="dropdown-item"><a href="/our-history" class="dropdown-link">Our History</a></li>
+                <li class="dropdown-item"><a href="/our-philosophy" class="dropdown-link">Our Philosophy</a></li>
+                <li class="dropdown-item"><a href="/team" class="dropdown-link">Team</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="/our-complete-menu" class="nav-link"><span>Menu</span></a></li>
+            <li class="nav-item"><a href="/reservation" class="nav-link"><span>Reservation</span></a></li>
+            <li class="nav-item"><a href="/contact-us" class="nav-link"><span>Contact Us</span></a></li>
+          </ul>
+        </nav>
+      </header>
+
+    </div>
 
 
     <footer>
