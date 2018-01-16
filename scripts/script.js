@@ -37,5 +37,42 @@ $(function(){
     });
   }
 
+  // our-philosophy testimonial
+  function slideTo(slide) {
+    var slideWidth = (slide-1)*100;
+    $('.testimonial').css({"transform": "translateX(-"+slideWidth+"%)", "transition": "0.5s"});
+  }
+  function loopTo(slide) {
+    var slideWidth = (slide-1)*100;
+    $('.testimonial').css({"transform": "translateX(-"+slideWidth+"%)", "transition": "0s"});
+  }
+
+  var testimonialTotal = $('.testimonial').length;
+  var testimonialCurrent = 1;
+  $('.testimonial-holder').css({"width": (testimonialTotal*800)+"px", "max-width": (testimonialTotal*100)+"%"});
+
+  $('.testimonial-prev').on('click', function() {
+    testimonialCurrent--;
+    if (testimonialCurrent < 1) {
+      testimonialCurrent = testimonialTotal;
+      // loopTo(testimonialCurrent);
+      // testimonialCurrent--;
+    }
+    slideTo(testimonialCurrent);
+    // console.log(testimonialCurrent);
+  });
+  $('.testimonial-next').on('click', function() {
+    testimonialCurrent++;
+    if (testimonialCurrent > testimonialTotal) {
+      testimonialCurrent = 1;
+      // loopTo(testimonialCurrent);
+      // testimonialCurrent++;
+    }
+    slideTo(testimonialCurrent);
+    // console.log(testimonialCurrent);
+
+
+  });
+
 
 });

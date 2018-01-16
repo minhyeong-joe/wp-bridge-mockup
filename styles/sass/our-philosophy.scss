@@ -1,0 +1,96 @@
+.our-philosophy-banner {
+  background-image: url("../img/our-philosophy/our-philosophy-title.jpg");
+}
+
+.our-philosophy-1 {
+  width: 900px;
+  padding: 50px 0;
+  max-width: 90%;
+  .row {
+    text-align: center;
+    margin: 40px 0;
+  }
+  p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+.our-philosophy-parallax {
+  background: url("../img/our-philosophy/our-philosophy-parallax.jpg") no-repeat fixed center 15%;
+  background-size: cover;
+  background-size: 150%;
+  p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 180px 0;
+    color: white;
+    margin: 0;
+  }
+  &.parallax-2 {
+    background-image: url("../img/our-philosophy/our-philosophy-parallax-2.jpg");
+    background-position: center 0%;
+  }
+  @media (max-width: 768px) {
+    background-attachment: scroll;
+  }
+}
+
+.our-philosophy-2 {
+  padding: 100px 60px;
+  .row {
+    text-align: center;
+    img {
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 1.4rem;
+      font-weight: bold;
+      @media (min-width: 768px) {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.our-philosophy-3 {
+  text-align: center;
+  padding: 100px 50px;
+  .row {
+    margin: 30px 0;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  .testimonial-wrapper {
+    width: 800px;
+    max-width: 90%;
+    overflow-x: hidden;
+    margin: auto;
+  }
+  .testimonial-holder {
+    display: flex;
+    // width: 2400px;
+    // max-width: 300%;
+    .testimonial {
+      width: 800px;
+      max-width: 100%;
+      // transform: translateX(-100%);
+      // transition: 0.5s;
+    }
+  }
+  .btn {
+    background-color: white;
+    color: black;
+    margin: 0 5px;
+    border: 3px solid black;
+    padding: 5px 10px;
+    font-weight: bold;
+    transition: 0.5s;
+    &:hover {
+      color:white;
+      background-color: black;
+    }
+  }
+}

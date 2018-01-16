@@ -1,0 +1,49 @@
+.our-history-banner {
+  background-image: url("../img/our-history/history-title-image.jpg");
+}
+
+.our-history-section {
+  .vl {
+    height: 100px;
+    border-left: 1px dotted black;
+    margin: 15px 0 25px 40px;
+  }
+  .row {
+    padding: 200px 0 50px;
+    @media (max-width:768px) {
+      padding: 50px 0;
+      .up {
+        transform: translateY(0);
+      }
+    }
+  }
+  .up {
+    transform: translateY(-20%);
+  }
+  h3 {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  img {
+    margin-bottom: 20px;
+  }
+  .parallax {
+    background: url("../img/our-history/history-parallax-image.jpg") no-repeat fixed center center;
+    background-size: cover;
+    padding: 100px 0;
+    .col {
+      text-align: center;
+      margin: 30px 0;
+      color: white;
+      h1 {
+        font-size: 5rem;
+      }
+      h2 {
+        font-size: 3rem;
+      }
+    }
+    img {
+      margin: 0 10px;
+    }
+  }
+}
