@@ -9,6 +9,10 @@ html,body {
   background-position: 50% 25%;
   background-attachment: fixed;
   position: relative;
+  @media screen and (max-width: 768px) {
+    height: 100vh;
+    background-attachment: scroll;
+  }
 }
 .opening-hours-banner {
   background: url("../img/opening-hours/opening-hours.jpg") no-repeat fixed 50% 50%;
@@ -17,12 +21,35 @@ html,body {
     background-attachment: scroll;
   }
 }
-@media screen and (max-width: 768px) {
-  .home-banner {
-    height: 100vh;
+
+.banner {
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  @media (max-width: 768px) {
+    height: 300px;
     background-attachment: scroll;
+    .banner-title {
+      padding: 80px 0 !important;
+    }
+  }
+  .banner-title {
+    padding: 200px 0;
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+    }
+  }
+  &.our-history-banner {
+    background-image: url("../img/our-history/history-title-image.jpg");
   }
 }
+
+
 
 .logo {
   height: 90px;
@@ -195,6 +222,7 @@ html,body {
   top: 46%;
   margin-left: 10% !important;
   user-select: none;
+  overflow-x: hidden;
   h1 {
     color: white;
     font-size: 4rem;
@@ -578,6 +606,54 @@ html,body {
       & {
         padding: 60px 15px;
       }
+    }
+  }
+}
+// end of opening Hours
+
+// our history section
+.our-history-section {
+  .vl {
+    height: 100px;
+    border-left: 1px dotted black;
+    margin: 15px 0 25px 40px;
+  }
+  .row {
+    padding: 200px 0 50px;
+    @media (max-width:768px) {
+      padding: 50px 0;
+      .up {
+        transform: translateY(0);
+      }
+    }
+  }
+  .up {
+    transform: translateY(-20%);
+  }
+  h3 {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  img {
+    margin-bottom: 20px;
+  }
+  .parallax {
+    background: url("../img/our-history/history-parallax-image.jpg") no-repeat fixed center center;
+    background-size: cover;
+    padding: 100px 0;
+    .col {
+      text-align: center;
+      margin: 30px 0;
+      color: white;
+      h1 {
+        font-size: 5rem;
+      }
+      h2 {
+        font-size: 3rem;
+      }
+    }
+    img {
+      margin: 0 10px;
     }
   }
 }

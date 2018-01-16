@@ -3,10 +3,12 @@
 // Author: Nathan Rutzky
 // Update: 1.0.2
 
+
+
 (function($) {
 
     jQuery.scrollSpeed = function(step, speed, easing) {
-        
+
         var $document = $(document),
             $window = $(window),
             $body = $('html, body'),
@@ -96,3 +98,6 @@
     };
 
 })(jQuery);
+
+
+// jQuery.scrollSpeed(300, 800, 'easeOutCubic');
