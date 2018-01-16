@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
 
     <link rel="stylesheet" href="styles/style.css">
   </head>
@@ -19,7 +20,7 @@
 
       <header>
 
-        <nav class="navbar wide-navbar">
+        <nav class="navbar wide-navbar d-none d-md-flex">
           <div class="navbar-left">
             <div class="logo"><img src="img/bridge93-logo.png" alt=""></div>
             <ul class="nav-list">
@@ -37,7 +38,7 @@
               <li class="nav-item"><a href="/contact-us" class="nav-link"><span>Contact Us</span></a></li>
             </ul>
           </div>
-          <div class="navbar-right">
+          <div class="navbar-right d-xl-block d-none">
             <a href="https://twitter.com" target="_blank" class="social-link twitter-link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             <a href="https://instagram.com" target="_blank" class="social-link instagram-link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             <a href="https://tripadvisor.com" target="_blank" class="social-link tripadvisor-link"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
@@ -46,7 +47,7 @@
           </div>
         </nav>
 
-        <nav class="navbar mobile-navbar">
+        <nav class="navbar mobile-navbar d-md-none d-sm-flex">
           <div class="navbar-left">
             <button class="navbar-toggler" type="button" data-toggle="collapse">
               <i class="fa fa-bars"></i>
@@ -80,6 +81,329 @@
       </div>
 
     </div>
+
+    <div class="reservation-under-banner">
+      <div class="container-fluid">
+        <form action="#" method="POST">
+          <div class="row">
+            <div class="col-lg-3">
+              <i class="fa fa-user-plus" aria-hidden="true"></i>
+              <select name="person">
+                <option value="1-person">1 Person</option>
+                <option value="2-people">2 People</option>
+                <option value="3-people">3 People</option>
+                <option value="4-people">4 People</option>
+                <option value="5-people">5 People</option>
+                <option value="6-people">6 People</option>
+                <option value="7-people">7 People</option>
+                <option value="8-people">8 People</option>
+                <option value="9-people">9 People</option>
+                <option value="10-people">10 People</option>
+              </select>
+            </div>
+            <div class="col-lg-3">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <input type="text" name="date" class="date-picker">
+            </div>
+            <div class="col-lg-3">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <select name="time">
+                <option value="6am">6:00 AM</option>
+                <option value="630am">6:30 AM</option>
+                <option value="7am">7:00 AM</option>
+                <option value="730am">7:30 AM</option>
+                <option value="8am">8:00 AM</option>
+                <option value="830am">8:30 AM</option>
+                <option value="9am">9:00 AM</option>
+                <option value="930am">9:30 AM</option>
+                <option value="10am">10:00 AM</option>
+                <option value="1030am">10:30 AM</option>
+                <option value="11am">11:00 AM</option>
+                <option value="1130am">11:30 AM</option>
+                <option value="12pm">12:00 PM</option>
+                <option value="1230pm">12:30 PM</option>
+                <option value="1pm">1:00 PM</option>
+                <option value="130pm">1:30 PM</option>
+                <option value="2pm">2:00 PM</option>
+                <option value="230pm">2:30 PM</option>
+                <option value="3pm">3:00 PM</option>
+                <option value="330pm">3:30 PM</option>
+                <option value="4pm">4:00 PM</option>
+                <option value="430pm">4:30 PM</option>
+                <option value="5pm">5:00 PM</option>
+                <option value="530pm">5:30 PM</option>
+                <option value="6pm">6:00 PM</option>
+                <option value="630pm">6:30 PM</option>
+                <option value="7pm" selected>7:00 PM</option>
+                <option value="730pm">7:30 PM</option>
+                <option value="8pm">8:00 PM</option>
+                <option value="830pm">8:30 PM</option>
+                <option value="9pm">9:00 PM</option>
+                <option value="930pm">9:30 PM</option>
+                <option value="10pm">10:00 PM</option>
+                <option value="1030pm">10:30 PM</option>
+                <option value="11pm">11:00 PM</option>
+              </select>
+            </div>
+            <div class="col-lg-3">
+              <input type="submit" name="book" value="Book a table">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <section class="home-section">
+
+      <div class="container-fluid">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-12">
+            <img src="img/home/home-image-2.jpg" alt="" class="img-fluid">
+          </div>
+          <div class="col-lg-3 col-11">
+            <h2>Beliner</h2>
+            <h2>Restaurant Choice</h2>
+            <h2>Awards 2017</h2>
+            <h2>Insider</h2>
+            <p class="text-muted">Donec vitae pharetra est. Sed vel euismod turpis, vitae scelerisque enim. Donec tincidunt lectus non tristique rhoncus. Sed convallis mi sed. Mauris et elit sit amet ipsum tempus eleifend</p>
+            <a href="#" class="signature">press center</a>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-5">
+            <h1>Experimental</h1>
+            <h1>Menu <sup style="font-size: 1rem;">2.0</sup></h1>
+          </div>
+          <div class="col-md-5">
+            <img src="img/home-image.png" alt="">
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-12">
+            <div class="menu-cat-holder d-flex">
+              <h4>Brunch Options</h4>
+              <p class="small"><span class="text-muted">TIME PROVIDED FOR BRUNCH: </span>11:00-12:00H</p>
+            </div>
+            <div class="menu-item-holder">
+              <div class="menu-item-row">
+                <strong>Mango Chili Chutney </strong>
+                <div class="menu-item-line"></div>
+                <strong> $40.00</strong>
+              </div>
+              <div class="menu-item-row">
+                <p class="text-muted">CHILIES, AROMATIC SPICES</p>
+              </div>
+            </div>
+            <div class="menu-item-holder">
+              <div class="menu-item-row">
+                <strong>Asian Hoisin Pork </strong>
+                <div class="menu-item-line"></div>
+                <strong> $75.00</strong>
+              </div>
+              <div class="menu-item-row">
+                <p class="text-muted">PORK, SEASONAL VEGETABLES</p>
+              </div>
+            </div>
+            <div class="menu-item-holder">
+              <div class="menu-item-row">
+                <strong>Spicy Fried Rice & Bacon </strong>
+                <div class="menu-item-line"></div>
+                <strong> $35.00</strong>
+              </div>
+              <div class="menu-item-row">
+                <p class="text-muted">BACON, RICE, VEGETABLES</p>
+                <p class="tag bg-dark small">NEW</p>
+              </div>
+            </div>
+            <div class="menu-item-holder">
+              <div class="menu-item-row">
+                <strong>Fruit Vanilla Ice Cream </strong>
+                <div class="menu-item-line"></div>
+                <strong> $12.00</strong>
+              </div>
+              <div class="menu-item-row">
+                <p class="text-muted">ICE CREAM, VANILLA, RUM</p>
+              </div>
+            </div>
+            <div class="menu-item-holder">
+              <div class="menu-item-row">
+                <strong>Kung Pao Chicken </strong>
+                <div class="menu-item-line"></div>
+                <strong> $69.00</strong>
+              </div>
+              <div class="menu-item-row">
+                <p class="text-muted">PEPPERS, CHICKEN, PEANUTS</p>
+                <p class="tag bg-dark small">RECOMMENDED</p>
+              </div>
+            </div>
+            <div class="menu-item-holder">
+              <div class="menu-item-row">
+                <strong>Chicken Doro Wat </strong>
+                <div class="menu-item-line"></div>
+                <strong> $75.00</strong>
+              </div>
+              <div class="menu-item-row">
+                <p class="text-muted">CHICKEN, GINGER, EGGS</p>
+              </div>
+            </div>
+            <div class="menu-item-holder">
+              <div class="menu-item-row">
+                <strong>Masala Spiced Chickpeas </strong>
+                <div class="menu-item-line"></div>
+                <strong> $29.00</strong>
+              </div>
+              <div class="menu-item-row">
+                <p class="text-muted">CHICKPEAS, RICE, PEPPERS</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="menu-cat-holder d-flex">
+              <h4>New Main Dishes</h4>
+              <p class="small"><span class="text-muted">TIME PROVIDED FOR DINNER: </span>13:00-17:00H</p>
+            </div>
+            <div class="menu-item-holder">
+              <div class="menu-item-row">
+                <strong>Fruit Vanilla Ice Cream </strong>
+                <div class="menu-item-line"></div>
+                <strong> $12.00</strong>
+              </div>
+              <div class="menu-item-row">
+                <p class="text-muted">ICE CREAM, VANILLA, RUM</p>
+                <p class="tag bg-dark small">RECOMMENDED</p>
+              </div>
+            </div>
+            <div class="menu-item-holder">
+              <div class="menu-item-row">
+                <strong>Spicy Fried Rice & Bacon </strong>
+                <div class="menu-item-line"></div>
+                <strong> $35.00</strong>
+              </div>
+              <div class="menu-item-row">
+                <p class="text-muted">BACON, RICE, VEGETABLES</p>
+                <p class="tag bg-dark small">NEW</p>
+              </div>
+            </div>
+            <div class="menu-item-holder">
+              <div class="menu-item-row">
+                <strong>Asian Hoisin Pork </strong>
+                <div class="menu-item-line"></div>
+                <strong> $75.00</strong>
+              </div>
+              <div class="menu-item-row">
+                <p class="text-muted">PORK, SEASONAL VEGETABLES</p>
+              </div>
+            </div>
+            <div class="menu-item-holder">
+              <div class="menu-item-row">
+                <strong>Mango Chili Chutney </strong>
+                <div class="menu-item-line"></div>
+                <strong> $40.00</strong>
+              </div>
+              <div class="menu-item-row">
+                <p class="text-muted">CHILIES, AROMATIC SPICES</p>
+              </div>
+            </div>
+            <div class="menu-item-holder">
+              <div class="menu-item-row">
+                <strong>Masala Spiced Chickpeas </strong>
+                <div class="menu-item-line"></div>
+                <strong> $29.00</strong>
+              </div>
+              <div class="menu-item-row">
+                <p class="text-muted">CHICKPEAS, RICE, PEPPERS</p>
+              </div>
+            </div>
+            <div class="menu-item-holder">
+              <div class="menu-item-row">
+                <strong>Chicken Doro Wat </strong>
+                <div class="menu-item-line"></div>
+                <strong> $75.00</strong>
+              </div>
+              <div class="menu-item-row">
+                <p class="text-muted">CHICKEN, GINGER, EGGS</p>
+              </div>
+            </div>
+            <div class="menu-item-holder">
+              <div class="menu-item-row">
+                <strong>Kung Pao Chicken </strong>
+                <div class="menu-item-line"></div>
+                <strong> $69.00</strong>
+              </div>
+              <div class="menu-item-row">
+                <p class="text-muted">PEPPERS, CHICKEN, PEANUTS</p>
+              </div>
+            </div>
+          </div>
+          <div class="btn btn-dark">Book a table</div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-12">
+            <h2>Berliner</h2>
+            <h2>Restaurant Choice</h2>
+            <h2>Awards 2017</h2>
+            <br>
+            <h5>CHEFS NEWS, JULY 12, 2017</h5>
+          </div>
+          <div class="col-lg-4 col-12">
+            <h2>World</h2>
+            <h2>Luxury Restaurant</h2>
+            <h2>Awards 2017</h2>
+            <br>
+            <h5>CHEFS NEWS, JULY 12, 2017</h5>
+          </div>
+          <div class="col-lg-4 col-12">
+            <h2>National</h2>
+            <h2>Restaurant Choice</h2>
+            <h2>Awards 2017</h2>
+            <br>
+            <h5>CHEFS NEWS, JULY 12, 2017</h5>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-12">
+            <div class="image-holder">
+              <img src="img/home/home-image.jpg" alt="" class="fluid-img">
+              <p>Taste the richness of minimalism</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <h1>“Sure judgement and patient craftsmanship make this restaurant a must-visit"</h1>
+            <p class="text-muted">Donec vitae pharetra est. Sed vel euismod turpis, vitae scelerisque enim. Donec tincidunt lectus non tristique rhoncus. Sed convallis mi sed. Mauris et elit sit amet ipsum tempus eleifend</p>
+            <p class="signature">Johann Loverboy</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-12">
+            <div id="map"></div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="image-holder">
+              <img src="img/home/home-image-2-1.jpg" alt="" class="fluid-img">
+              <p>8975 Sullivan Street, New York, NY 10212</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row home-parallax justify-content-center">
+          <div class="col-8">
+            <h1 class="signature">Robert Patrick</h1>
+            <p>Fierce food served with attitude and style</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
 
 
     <footer>
@@ -131,8 +455,87 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
     <script type="text/javascript" src="scripts/jQuery.scrollSpeed.js"></script>
     <script type="text/javascript" src="scripts/script.min.js"></script>
+    <script type="text/javascript">
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 40.690731, lng: -73.924064},
+        zoom: 11,
+        streetViewControl: false,
+        mapTypeControl: false,
+        scrollwheel: false,
+        styles: [
+          {
+            featureType: "all",
+            elementType: "all",
+            stylers: [
+              { saturation: -100 }
+            ]
+          }
+        ]
+      });
+      var locations = [
+        {
+          position: new google.maps.LatLng(40.594975, -73.905849),
+          name: "3266-3270 Flatbush Ave Brooklyn, NY 11234, USA"
+        },
+        {
+          position: new google.maps.LatLng(40.652311, -73.962898),
+          name:"67 St Pauls Pl Brooklyn, NY 11226, USA"
+        },
+        {
+          position: new google.maps.LatLng(40.757878, -73.904199),
+          name: "57-07 31st Ave Woodside, NY 11377, USA"
+        }
+      ];
+
+      var marker = [
+        new google.maps.Marker({
+          position:locations[0].position,
+          icon: "img/home/pin.png",
+          map: map,
+        }),
+        new google.maps.Marker({
+          position:locations[1].position,
+          icon: "img/home/pin.png",
+          map: map,
+        }),
+        new google.maps.Marker({
+          position:locations[2].position,
+          icon: "img/home/pin.png",
+          map: map,
+        })
+      ];
+
+      var infowindow = [
+        new google.maps.InfoWindow({
+          content: locations[0].name
+        }),
+        new google.maps.InfoWindow({
+          content: locations[1].name
+        }),
+        new google.maps.InfoWindow({
+          content: locations[2].name
+        }),
+      ]
+      marker[0].addListener('click', function() {
+        infowindow[0].open(map, marker[0]);
+      });
+      marker[1].addListener('click', function() {
+        infowindow[1].open(map, marker[1]);
+      });
+      marker[2].addListener('click', function() {
+        infowindow[2].open(map, marker[2]);
+      });
+
+    }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvA-x2-YXE5xV_XrvxXGr2D-ni4jURoTw&callback=initMap"
+    async defer></script>
   </body>
 </html>

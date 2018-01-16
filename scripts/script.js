@@ -22,4 +22,17 @@ $(function(){
   })
 
 
+  // reservation date input default to today
+  Date.prototype.toDateInputValue = (function() {
+    var local = new Date(this);
+    local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+    return local.toJSON().slice(0,10);
+  });
+  $('.date-picker').val(new Date().toDateInputValue());
+
+  $(".date-picker").datepicker();
+  $(".date-picker").on("change", function() {
+    $(".date-picker").datepicker("option", "dateFormat", "yy-mm-dd");
+  });
+
 });
