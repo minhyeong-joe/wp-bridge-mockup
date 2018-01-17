@@ -2,6 +2,8 @@
 @import "opening-hours";
 @import "our-history";
 @import "our-philosophy";
+@import "team";
+@import "menu";
 
 html,body {
   overflow-x: hidden;
@@ -64,6 +66,7 @@ html,body {
     display: flex;
     line-height: 100px;
     padding-left: 0;
+    list-style: none;
   }
   .nav-link {
     padding: 0 20px;

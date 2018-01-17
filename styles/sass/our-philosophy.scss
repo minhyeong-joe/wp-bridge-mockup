@@ -34,6 +34,9 @@
   }
   @media (max-width: 768px) {
     background-attachment: scroll;
+    p {
+      padding: 15% 0;
+    }
   }
 }
 
@@ -57,30 +60,49 @@
 .our-philosophy-3 {
   text-align: center;
   padding: 100px 50px;
+  @media (max-width: 768px) {
+    padding: 60px 10px;
+  }
   .row {
     margin: 30px 0;
   }
   p {
     font-size: 1.2rem;
+    margin: none;
   }
-  .testimonial-wrapper {
+  .slider-box {
     width: 800px;
-    max-width: 90%;
-    overflow-x: hidden;
-    margin: auto;
+    max-width: 100%;
+    // border: 1px solid red;
+    position:relative;
+    overflow: hidden;
+    margin:auto;
+    // height: 200px;
+    // @media (max-width: 768px) {
+    //   height: 260px;
+    // }
+    // @media (max-width: 330px) {
+    //   height: 330px;
+    // }
   }
-  .testimonial-holder {
+  .slider-texts {
+    position: absolute;
     display: flex;
-    // width: 2400px;
-    // max-width: 300%;
-    .testimonial {
-      width: 800px;
-      max-width: 100%;
-      // transform: translateX(-100%);
-      // transition: 0.5s;
-    }
+    // width: 1600px;
+    // max-width: 200%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
-  .btn {
+  .slider-text {
+    display: block;
+    width: 800px;
+    max-width: 100%;
+    // padding: 30px 10px;
+  }
+  .slider-btn {
+    cursor:pointer;
+    outline: none;
     background-color: white;
     color: black;
     margin: 0 5px;
