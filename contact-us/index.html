@@ -16,7 +16,7 @@
 
 
 
-    <div class="home-banner">
+    <div class="banner contact-banner">
 
       <header>
 
@@ -73,6 +73,74 @@
         </nav>
       </header>
 
+      <div class="row justify-content-center banner-title">
+        <div class="col-12">
+          <h1>Contact us</h1>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container text-center contact-section">
+      <div class="row contact-1">
+        <div class="col-lg-8 col-12">
+          <div id="map"></div>
+        </div>
+        <div class="col-lg-4 col-12 text-left main">
+          <h3>Bridge</h3>
+          <br>
+          <p class="text-muted">Aenean sollicitudin, lorem quis biben dum auctor, nisi elit consequat</p>
+          <br>
+          <h6><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="text-muted small">3RD AVE, NEW YORK, NY 10075, USA</span></h6>
+          <h6><i class="fa fa-phone" aria-hidden="true"></i> 	<span class="text-muted small">2-7777-123-4555</span></h6>
+          <h6><i class="fa fa-envelope" aria-hidden="true"></i> <span class="text-muted small">INFO@YOUREMAIL.COM</span></h6>
+        </div>
+        <div class="w-lg-100"></div>
+        <div class="col-lg-4 col-md-6 col-12 text-left sub">
+          <h3>Bridge</h3>
+          <br>
+          <h6><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="text-muted small">3RD AVE, NEW YORK, NY 10075, USA</span></h6>
+          <h6><i class="fa fa-phone" aria-hidden="true"></i> 	<span class="text-muted small">2-7777-123-4555</span></h6>
+          <h6><i class="fa fa-envelope" aria-hidden="true"></i> <span class="text-muted small">INFO@YOUREMAIL.COM</span></h6>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 text-left sub">
+          <h3>Bridge</h3>
+          <br>
+          <h6><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="text-muted small">3RD AVE, NEW YORK, NY 10075, USA</span></h6>
+          <h6><i class="fa fa-phone" aria-hidden="true"></i> 	<span class="text-muted small">2-7777-123-4555</span></h6>
+          <h6><i class="fa fa-envelope" aria-hidden="true"></i> <span class="text-muted small">INFO@YOUREMAIL.COM</span></h6>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 text-left sub">
+          <h3>Bridge</h3>
+          <br>
+          <h6><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="text-muted small">3RD AVE, NEW YORK, NY 10075, USA</span></h6>
+          <h6><i class="fa fa-phone" aria-hidden="true"></i> 	<span class="text-muted small">2-7777-123-4555</span></h6>
+          <h6><i class="fa fa-envelope" aria-hidden="true"></i> <span class="text-muted small">INFO@YOUREMAIL.COM</span></h6>
+        </div>
+      </div>
+
+      <div class="row contact-2">
+        <div class="col-md-8 col-12">
+          <form action="#" method="POST">
+            <div class="form-group">
+              <input type="text" id="contact-name" aria-describedby="emailHelp" placeholder="Name *" name="name">
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="contact-email" aria-describedby="emailHelp" placeholder="E-mail address *" name="email">
+            </div>
+
+            <div class="form-group">
+              <textarea name="comment" id="contact-comment" rows="5" placeholder="Comment *"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-dark pull-left" name="submit">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-4 col-12">
+          <img src="../img/contact/contact-image.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
     </div>
 
 
@@ -128,5 +196,52 @@
 
     <script type="text/javascript" src="../scripts/jQuery.scrollSpeed.js"></script>
     <script type="text/javascript" src="../scripts/script.min.js"></script>
+    <script type="text/javascript">
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 40.682035, lng: -73.942734},
+        zoom: 11,
+        streetViewControl: false,
+        mapTypeControl: false,
+        scrollwheel: false,
+        styles: [
+          {
+            featureType: "all",
+            elementType: "all",
+            stylers: [
+              { saturation: -100 }
+            ]
+          }
+        ]
+      });
+      var locations = [
+        {
+          position: new google.maps.LatLng(40.682035, -73.942734),
+          name: "202 Macon St Brooklyn, NY 11216, USA"
+        }
+      ];
+
+      var marker = [
+        new google.maps.Marker({
+          position:locations[0].position,
+          icon: "../img/home/pin.png",
+          map: map,
+        })
+      ];
+
+      var infowindow = [
+        new google.maps.InfoWindow({
+          content: locations[0].name
+        })
+      ]
+      marker[0].addListener('click', function() {
+        infowindow[0].open(map, marker[0]);
+      });
+    }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvA-x2-YXE5xV_XrvxXGr2D-ni4jURoTw&callback=initMap"
+    async defer></script>
   </body>
 </html>

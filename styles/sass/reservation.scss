@@ -1,0 +1,20 @@
+.reservation-banner {
+  background: url("../img/reservation/reservation-background-image.jpg") no-repeat scroll center center;
+  background-size: cover;
+}
+
+.reservation-section {
+  padding: 200px 0;
+  h1 {
+    color: white;
+    margin: 80px 0;
+  }
+}
+
+.reservation-under-banner.modify {
+  background: none;
+  .col-lg-3 {
+    padding: 0;
+    margin: 20px 0;
+  }
+}

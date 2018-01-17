@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
 
     <link rel="stylesheet" href="../styles/style.css">
   </head>
@@ -16,7 +17,7 @@
 
 
 
-    <div class="home-banner">
+    <div class="reservation-banner">
 
       <header>
 
@@ -73,6 +74,93 @@
         </nav>
       </header>
 
+    <div class="container reservation-section text-center">
+      <div class="row">
+        <div class="col">
+          <img src="../img/reservation/reservation-logo.png" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1>Make a reservation</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="reservation-under-banner modify">
+          <!-- <div class="container-fluid"> -->
+            <form action="#" method="POST">
+              <div class="row">
+                <div class="col-lg-3">
+                  <i class="fa fa-user-plus" aria-hidden="true"></i>
+                  <select name="person">
+                    <option value="1-person">1 Person</option>
+                    <option value="2-people">2 People</option>
+                    <option value="3-people">3 People</option>
+                    <option value="4-people">4 People</option>
+                    <option value="5-people">5 People</option>
+                    <option value="6-people">6 People</option>
+                    <option value="7-people">7 People</option>
+                    <option value="8-people">8 People</option>
+                    <option value="9-people">9 People</option>
+                    <option value="10-people">10 People</option>
+                  </select>
+                </div>
+                <div class="col-lg-3">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                  <input type="text" name="date" class="date-picker">
+                </div>
+                <div class="col-lg-3">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                  <select name="time">
+                    <option value="6am">6:00 AM</option>
+                    <option value="630am">6:30 AM</option>
+                    <option value="7am">7:00 AM</option>
+                    <option value="730am">7:30 AM</option>
+                    <option value="8am">8:00 AM</option>
+                    <option value="830am">8:30 AM</option>
+                    <option value="9am">9:00 AM</option>
+                    <option value="930am">9:30 AM</option>
+                    <option value="10am">10:00 AM</option>
+                    <option value="1030am">10:30 AM</option>
+                    <option value="11am">11:00 AM</option>
+                    <option value="1130am">11:30 AM</option>
+                    <option value="12pm">12:00 PM</option>
+                    <option value="1230pm">12:30 PM</option>
+                    <option value="1pm">1:00 PM</option>
+                    <option value="130pm">1:30 PM</option>
+                    <option value="2pm">2:00 PM</option>
+                    <option value="230pm">2:30 PM</option>
+                    <option value="3pm">3:00 PM</option>
+                    <option value="330pm">3:30 PM</option>
+                    <option value="4pm">4:00 PM</option>
+                    <option value="430pm">4:30 PM</option>
+                    <option value="5pm">5:00 PM</option>
+                    <option value="530pm">5:30 PM</option>
+                    <option value="6pm">6:00 PM</option>
+                    <option value="630pm">6:30 PM</option>
+                    <option value="7pm" selected>7:00 PM</option>
+                    <option value="730pm">7:30 PM</option>
+                    <option value="8pm">8:00 PM</option>
+                    <option value="830pm">8:30 PM</option>
+                    <option value="9pm">9:00 PM</option>
+                    <option value="930pm">9:30 PM</option>
+                    <option value="10pm">10:00 PM</option>
+                    <option value="1030pm">10:30 PM</option>
+                    <option value="11pm">11:00 PM</option>
+                  </select>
+                </div>
+                <div class="col-lg-3">
+                  <input type="submit" name="book" value="Book a table">
+                </div>
+              </div>
+            </form>
+          <!-- </div> -->
+        </div>
+
+        </div>
+      </div>
+    </div>
 
     </div>
 
@@ -126,6 +214,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
     <script type="text/javascript" src="../scripts/jQuery.scrollSpeed.js"></script>
     <script type="text/javascript" src="../scripts/script.min.js"></script>
